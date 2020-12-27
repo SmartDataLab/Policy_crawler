@@ -1,0 +1,10 @@
+scrapy crawl  Hunan
+scrapy crawl  Guangdong
+scrapy crawl  Yunnan
+scrapy crawl  Sichuan
+scrapy crawl  Neimenggu
+scrapy crawl  Shangdong
+scrapy crawl  Shanghai
+scrapy crawl  Guangxi
+scrapy crawl  Hebei
+scrapy crawl  Xinjiang
