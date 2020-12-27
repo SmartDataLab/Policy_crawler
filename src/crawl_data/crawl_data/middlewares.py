@@ -170,6 +170,7 @@ class SeleniumDownloaderMiddleware(object):
             "Anhui",
             "Yunnan",
             "Shaanxi_shan",
+            "Shandong",
         ]:
             t = time.time()
             if t - self.lasttime <= 10:
@@ -221,6 +222,7 @@ class SeleniumDownloaderMiddleware(object):
             "Anhui",
             "Yunnan",
             "Shaanxi_shan",
+            "Shandong",
         ]:
             print("添加代理开始")
             t = time.time()

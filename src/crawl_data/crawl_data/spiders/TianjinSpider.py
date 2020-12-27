@@ -39,6 +39,7 @@ class TianjinSpider(scrapy.Spider):
             piece["UID"] = piece["url"].split("/")[-1].split(".")[0]
             piece["title"] = piece["BT"]
             piece["date"] = piece["FBRQ"].split("T")[0]
+            piece["mainText"] = piece["ZW"]
             piece["crawl state"] = "full"
             piece["text length"] = 0
             piece["FileNumber"] = piece["FWZH"]

@@ -27,10 +27,12 @@ class QinghaiSpider(scrapy.Spider):
             url = li.css("td")[0].css("a::attr(href)").get()
             UID = url.split("/")[-1].split(".")[0]
             detail_page_links.append(url)
+            date = UID.split("_")[0][1:]
+            date = "-".join([date[:4], date[4:6], date[6:8]])
             yield {
                 "UID": UID,
                 "title": "".join(li.css("td")[0].css("a \*::text").getall()),
-                "date": li.css("td")[3].css("::text").get(),
+                "date": date,
                 "FileNumber": li.css("td")[1].css("::text").get(),
                 "text length": 0,
                 "url": url,
